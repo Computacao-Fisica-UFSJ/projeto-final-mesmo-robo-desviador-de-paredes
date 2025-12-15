@@ -1,0 +1,13 @@
+AM2302-Sensor
+
+DallasTemperature
+
+ESP32_Thermistor
+
+OneWire
+
+Servo
+
+GROVE - LCD RGB blacklight
+
+DHT sensor library

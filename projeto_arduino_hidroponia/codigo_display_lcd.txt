@@ -1,0 +1,28 @@
+#include <Adafruit_LiquidCrystal.h>
+
+Adafruit_LiquidCrystal lcd_1(0);
+
+void setup()
+{
+  lcd_1.begin(16, 2);
+  String umidade_ar="0";
+  String temperatura_ar="1";
+  String temperatura_agua="2";
+  
+  // Escrevemos o texto normalmente
+  lcd_1.print(" /umid ar= "+umidade_ar+"%");
+  lcd_1.print(" /temp agua= "+temperatura_agua+"°C");
+  
+  // Escrevemos algo na linha de baixo para você ver que tudo se move junto
+  lcd_1.setCursor(1, 1);
+  lcd_1.print(" /temp ar= "+temperatura_ar+"°C");
+}
+
+void loop()
+{
+  // Esta função move tudo o que está na tela 1 casa para a esquerda
+  lcd_1.scrollDisplayLeft();
+  
+  // A velocidade do delay define a velocidade da animação
+  delay(300); 
+}

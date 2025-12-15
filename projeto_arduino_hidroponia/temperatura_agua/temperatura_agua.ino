@@ -1,0 +1,22 @@
+#include <OneWire.h>
+#include <DallasTemperature.h>
+
+// O fio de dados é ligado no pino digital 2
+#define ONE_WIRE_BUS 2
+
+OneWire oneWire(ONE_WIRE_BUS);
+DallasTemperature sensors(&oneWire);
+
+void setup() {
+  Serial.begin(9600);
+  sensors.begin();
+}
+
+void loop() {
+  sensors.requestTemperatures(); 
+  float temp = sensors.getTempCByIndex(0); // Pega a temperatura
+  
+  Serial.print("Temperatura: ");
+  Serial.println(temp);
+  delay(1000);
+}

@@ -52,12 +52,6 @@ Por fim, a estabilidade da nutrição é mantida por um sistema de reposição h
 
 -FD10(sensor de nível de água)
 
-##### Diagrama da montagem:
-
-##### Foto e vídeo do projeto:
-
-##### Bibliotecas utilizadas:
-
 AM2302-Sensor
 
 DallasTemperature
@@ -83,6 +77,12 @@ DHT sensor library
 -Tivemos dificuldades para fazer o servo se mover na angulação correta. Além disso, foi necessário desenvolver um apoio para que o servo conseguisse aumentar e diminuir a intensidade da luz do dimmer, garantindo também a fixação adequada entre ambos.
 
 -Outra dificuldade foi para fazer o servo funcionar junto com os outros sensores e atuadores, pois o 5V do Arduino não estava fornecendo energia suficiente para todos os componentes. Por isso, foi necessário utilizar o 5V do protoboard para garantir o funcionamento correto do sistema.
+
+##### Diagrama da montagem:
+
+##### Foto e vídeo do projeto:
+
+##### Bibliotecas utilizadas:
 
 ##### 
 
